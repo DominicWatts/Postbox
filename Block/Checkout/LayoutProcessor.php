@@ -1,7 +1,6 @@
 <?php
 
 // phpcs:disable Magento2.Files.LineLength.MaxExceeded
-
 namespace Xigen\Postbox\Block\Checkout;
 
 /**
@@ -9,7 +8,6 @@ namespace Xigen\Postbox\Block\Checkout;
  */
 class LayoutProcessor implements \Magento\Checkout\Block\Checkout\LayoutProcessorInterface
 {
-
     public function getShippingFormFields($result)
     {
         if (isset($result['components']['checkout']['children']['steps']['children']
@@ -43,7 +41,6 @@ class LayoutProcessor implements \Magento\Checkout\Block\Checkout\LayoutProcesso
             ['payments-list']['children'];
         
             foreach ($paymentForms as $paymentMethodForm => $paymentMethodValue) {
-        
                 $paymentMethodCode = str_replace('-form', '', $paymentMethodForm);
         
                 if (!isset($result['components']['checkout']['children']['steps']['children']['billing-step']['children']['payment']['children']['payments-list']['children'][$paymentMethodCode . '-form'])) {

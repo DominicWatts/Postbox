@@ -1,5 +1,4 @@
 <?php
-
 namespace Xigen\Postbox\Plugin\Magento\Quote\Model;
 
 /**
@@ -14,6 +13,7 @@ class ShippingAddressManagement
 
     /**
      * Constructor function
+     *
      * @param Psr\Log\LoggerInterface $logger
      */
     public function __construct(
@@ -26,6 +26,7 @@ class ShippingAddressManagement
      * @param \Magento\Quote\Model\ShippingAddressManagement $subject
      * @param $cartId
      * \Magento\Quote\Api\Data\AddressInterface $address
+     *
      * @return array
      */
     public function beforeAssign(
