@@ -1,22 +1,25 @@
 <?php
-
 namespace Xigen\Postbox\Setup;
 
+use Magento\Customer\Model\Indexer\Address\AttributeProvider;
+use Magento\Customer\Setup\CustomerSetupFactory;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;
-use Magento\Customer\Setup\CustomerSetupFactory;
-use Magento\Customer\Model\Indexer\Address\AttributeProvider;
 
 /**
  * InstallData class
  */
 class InstallData implements InstallDataInterface
 {
+    /**
+     * @var CustomerSetupFactory
+     */
     private $customerSetupFactory;
 
     /**
      * Constructor.
+     *
      * @param \Magento\Customer\Setup\CustomerSetupFactory $customerSetupFactory
      */
     public function __construct(
