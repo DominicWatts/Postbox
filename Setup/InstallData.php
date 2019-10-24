@@ -13,6 +13,9 @@ use Magento\Customer\Model\Indexer\Address\AttributeProvider;
  */
 class InstallData implements InstallDataInterface
 {
+    /**
+     * @var CustomerSetupFactory
+     */
     private $customerSetupFactory;
 
     /**
