@@ -15,7 +15,6 @@ enabled:
   - logical_operators
   - no_blank_lines_after_phpdoc
   - no_blank_lines_after_return
-  - no_blank_lines_before_namespace
   - no_empty_comment
   - no_empty_phpdoc
   - no_empty_statement
@@ -36,7 +35,6 @@ enabled:
   - phpdoc_order
   - phpdoc_return_self_reference
   - phpdoc_scalar
-  - phpdoc_separation
   - phpdoc_single_line_var_spacing
   - phpdoc_to_comment
   - phpdoc_trim
