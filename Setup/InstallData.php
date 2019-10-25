@@ -1,4 +1,5 @@
 <?php
+
 namespace Xigen\Postbox\Setup;
 
 use Magento\Customer\Model\Indexer\Address\AttributeProvider;

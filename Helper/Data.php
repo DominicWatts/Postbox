@@ -2,16 +2,15 @@
 
 namespace Xigen\Postbox\Helper;
 
-use Magento\Framework\App\Helper\Context;
 use Magento\Framework\App\Helper\AbstractHelper;
 
 /**
  * Class Data
+ *
  * @package Xigen\Postbox\Helper
  */
 class Data extends AbstractHelper
 {
-
     /**
      * @var \Magento\Framework\DataObject\Copy\Config
      */
@@ -24,6 +23,7 @@ class Data extends AbstractHelper
 
     /**
      * Data constructor.
+     *
      * @param \Magento\Framework\DataObject\Copy\Config $fieldsetConfig
      * @param \Psr\Log\LoggerInterface $logger
      */
@@ -38,6 +38,7 @@ class Data extends AbstractHelper
     /**
      * @param string $fieldset
      * @param string $root
+     *
      * @return array
      */
     public function getExtraCheckoutAddressFields($fieldset = 'extra_checkout_billing_address_fields', $root = 'global')
@@ -56,6 +57,7 @@ class Data extends AbstractHelper
      * @param $fromObject
      * @param $toObject
      * @param string $fieldset
+     *
      * @return mixed
      */
     public function transportFieldsFromExtensionAttributesToObject(

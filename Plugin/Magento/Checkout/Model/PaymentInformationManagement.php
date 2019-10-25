@@ -19,6 +19,7 @@ class PaymentInformationManagement
 
     /**
      * Undocumented function
+     *
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Xigen\Postbox\Helper\Data $helper
      */
@@ -32,10 +33,12 @@ class PaymentInformationManagement
 
     /**
      * Undocumented function
+     *
      * @param \Magento\Checkout\Model\PaymentInformationManagement $subject
      * @param int $cartId
      * @param \Magento\Quote\Api\Data\PaymentInterface $paymentMethod
      * @param \Magento\Quote\Api\Data\AddressInterface $address
+     *
      * @return void
      */
     public function beforeSavePaymentInformation(
