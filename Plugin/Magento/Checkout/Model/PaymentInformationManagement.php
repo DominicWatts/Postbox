@@ -1,24 +1,24 @@
 <?php
 
-namespace Xigen\Postbox\Plugin\Magento\Quote\Model;
+namespace Xigen\Postbox\Plugin\Magento\Checkout\Model;
 
 /**
- * BillingAddressManagement class
+ * PaymentInformationManagement class
  */
-class BillingAddressManagement
+class PaymentInformationManagement
 {
-    /**
-     * @var \Psr\Log\LoggerInterface
-     */
-    private $logger;
-
     /**
      * @var \Xigen\Postbox\Helper\Data
      */
-    private $helper;
+    protected $helper;
 
     /**
-     * BillingAddressManagement constructor.
+     * @var \Psr\Log\LoggerInterface
+     */
+    protected $logger;
+
+    /**
+     * Undocumented function
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Xigen\Postbox\Helper\Data $helper
      */
@@ -31,16 +31,18 @@ class BillingAddressManagement
     }
 
     /**
-     * @param \Magento\Quote\Model\BillingAddressManagement $subject
-     * @param $cartId
+     * Undocumented function
+     * @param \Magento\Checkout\Model\PaymentInformationManagement $subject
+     * @param int $cartId
+     * @param \Magento\Quote\Api\Data\PaymentInterface $paymentMethod
      * @param \Magento\Quote\Api\Data\AddressInterface $address
-     * @param bool $useForShipping
+     * @return void
      */
-    public function beforeAssign(
-        \Magento\Quote\Model\BillingAddressManagement $subject,
+    public function beforeSavePaymentInformation(
+        \Magento\Checkout\Model\PaymentInformationManagement $subject,
         $cartId,
-        \Magento\Quote\Api\Data\AddressInterface $address,
-        $useForShipping = false
+        \Magento\Quote\Api\Data\PaymentInterface $paymentMethod,
+        \Magento\Quote\Api\Data\AddressInterface $address
     ) {
         $extAttributes = $address->getExtensionAttributes();
         if (!empty($extAttributes)) {

@@ -41,7 +41,7 @@ class InstallData implements InstallDataInterface
             AttributeProvider::ENTITY,
             'po_box',
             [
-                'label' => 'po_box',
+                'label' => 'PO Box',
                 'input' => 'text',
                 'type' => 'varchar',
                 'source' => '',
@@ -57,7 +57,8 @@ class InstallData implements InstallDataInterface
             ]
         );
 
-        $attribute = $customerSetup->getEavConfig()->getAttribute(AttributeProvider::ENTITY, 'po_box')
+        $attribute = $customerSetup->getEavConfig()
+            ->getAttribute(AttributeProvider::ENTITY, 'po_box')
             ->addData(
                 [
                     'used_in_forms' => [

@@ -6,4 +6,7 @@
     <type name="Magento\Quote\Model\BillingAddressManagement">
         <plugin disabled="false" name="Xigen_Postbox_Plugin_Magento_Quote_Model_BillingAddressManagement" sortOrder="10" type="Xigen\Postbox\Plugin\Magento\Quote\Model\BillingAddressManagement"/>
     </type>
+    <type name="Magento\Checkout\Model\PaymentInformationManagement">
+        <plugin disabled="false" name="Xigen_Postbox_Plugin_Magento_Checkout_Model_PaymentInformationManagement" sortOrder="10" type="Xigen\Postbox\Plugin\Magento\Checkout\Model\PaymentInformationManagement"/>
+</type>
 </config>
