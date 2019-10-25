@@ -118,7 +118,7 @@ class LayoutProcessor implements \Magento\Checkout\Block\Checkout\LayoutProcesso
             'provider' => 'checkoutProvider',
             'validation' => [],
             'options' => [],
-            'label' => __('po_box')
+            'label' => __('PO Box')
         ];
 
         return $field;
