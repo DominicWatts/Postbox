@@ -19,6 +19,7 @@ class ShippingAddressManagement
 
     /**
      * ShippingAddressManagement constructor.
+     *
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Xigen\Postbox\Helper\Data $helper
      */

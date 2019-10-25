@@ -1,8 +1,8 @@
-# Magneto 2 PO box field
+# Magento 2 PO box field
 
 Add PO box field to checkout address
 
-# Install instructions #
+# Install instructions
 
 `composer require dominicwatts/postbox`
 
