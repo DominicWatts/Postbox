@@ -24,6 +24,7 @@ class ModelServiceQuoteSubmitBefore implements \Magento\Framework\Event\Observer
 
     /**
      * ModelServiceQuoteSubmitBefore constructor.
+     *
      * @param \Magento\Quote\Model\QuoteRepository $quoteRepository
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Xigen\Postbox\Helper\Data $helper
@@ -42,6 +43,7 @@ class ModelServiceQuoteSubmitBefore implements \Magento\Framework\Event\Observer
      * Execute observer
      *
      * @param \Magento\Framework\Event\Observer $observer
+     *
      * @throws \Magento\Framework\Exception\NoSuchEntityException
      */
     public function execute(
